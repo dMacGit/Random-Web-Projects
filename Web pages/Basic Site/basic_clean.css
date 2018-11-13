@@ -1,0 +1,51 @@
+#header-wrapper 
+{
+	margin-left: 5em;
+	margin-top: 3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	background-color: blue;
+}
+
+#meta-wrapper
+{
+	margin-left: 5em;
+	margin-top: 3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	background-color: green;
+}
+
+.metaItem
+{
+	width: auto;
+	position: float;
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.meta-Post-Space
+{
+	padding-right: 3em
+}
+
+.left-align
+{
+	text-align: left;
+	
+}
+
+.right-align
+{
+	text-align: right;
+}
+
+.center-align
+{
+	text-align: center;
+}
+
+.no-vert-margin
+{
+	margin: 0em;
+}
