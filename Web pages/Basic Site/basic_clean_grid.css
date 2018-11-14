@@ -1,0 +1,120 @@
+/*Making use of css grid for layout simplicity */
+
+.main-grid-wrapper
+{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1;
+}
+
+#header-wrapper 
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 5em;
+	margin-top: 3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	background-color: blue;
+}
+
+#sub-wrapper
+{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 5em;
+	margin-top: 3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	display: grid;
+	grid-template-columns: 2;
+	grid-template-rows: auto: 
+}
+
+#meta-wrapper
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin-left: 5em;
+	margin-top: 3em;
+	padding-left: 5em;
+	padding-right: 5em;
+	display: grid;
+	grid-template-columns: 3;
+	grid-template-rows: auto: 
+	
+}
+
+.authorItem.metaItem
+{
+	width:15em;
+}
+
+#author-box
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.metaItem
+{
+	width: auto;
+	position: float;
+	display: inline-block;
+	vertical-align: text-top;
+	background-color: green;
+}
+
+
+
+#metaOne
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#metaTwo
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+#metaThree
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.meta-Post-Space
+{
+	padding-right: 3em
+}
+
+
+
+.no-vert-margin
+{
+	margin: 0em;
+	text-align: center;
+	
+}
+
+.small-rounded-edges
+{
+	border-radius: .5em;
+	border: none;
+}
