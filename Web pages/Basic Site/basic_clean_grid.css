@@ -15,9 +15,28 @@
 	grid-column-end: 2;
 	margin-left: 5em;
 	margin-top: 3em;
-	padding-left: 5em;
-	padding-right: 5em;
-	background-color: blue;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #FF5733;
+}
+#header
+{
+	margin: 0 auto;
+	height: 5em;
+
+}
+
+#title-text
+{
+	display: block;
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    vertical-align: middle;
+
 }
 
 #sub-wrapper
@@ -41,8 +60,6 @@
 	grid-row-end: 2;
 	grid-column-start: 2;
 	grid-column-end: 3;
-	margin-left: 5em;
-	margin-top: 3em;
 	padding-left: 5em;
 	padding-right: 5em;
 	display: grid;
@@ -51,9 +68,11 @@
 	
 }
 
-.authorItem.metaItem
+.authorItem
 {
-	width:15em;
+	width:auto;
+	/*Light Green*/
+	background-color: #DAF7A6;
 }
 
 #author-box
@@ -66,13 +85,22 @@
 
 .metaItem
 {
-	width: auto;
 	position: float;
 	display: inline-block;
-	vertical-align: text-top;
-	background-color: green;
-}
+	vertical-align: text-center;
+	/*Yellow*/
+	background-color: #FFC300;
+	
 
+}
+.p-item
+{
+	margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    top: auto;
+}
 
 
 #metaOne
@@ -117,4 +145,14 @@
 {
 	border-radius: .5em;
 	border: none;
+}
+
+.left-space
+{
+	margin-left: 2em;
+}
+
+.right-space
+{
+	margin-right: 2em;
 }
