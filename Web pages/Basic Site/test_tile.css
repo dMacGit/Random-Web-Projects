@@ -1,0 +1,82 @@
+
+
+#header-wrapper 
+{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin-left: 5em;
+	margin-top: 3em;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: grey;
+}
+
+.content-wrapper
+{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background-color: blue;
+	display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 3;
+  
+}
+
+.item-wrapper
+{
+	display: grid;
+	
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-areas: "one two three"
+}
+
+#one
+{
+	grid-area: one;
+}
+
+#two
+{
+	grid-area: two;
+}
+
+#three
+{
+	grid-area: three;
+}
+
+.item-grid-wrapper
+{
+	display: grid;
+	grid-template-rows: repeat(5,1fr);
+	grid-template-columns: repeat(5,1fr);
+  	grid-template-areas: 
+  		"image image image stores stores"
+  		"image image image stores stores"
+  		"image image image stores stores"
+  		"image image image stores stores"
+  		"desc desc desc . ."
+  	
+}
+
+
+
+.item-image
+{
+	grid-area: image;
+  	background-color: green;
+}
+
+.item-descrpt
+{
+	grid-area: desc;
+  	background-color: yellow;
+}
+
+.item-stores
+{
+	grid-area: stores;
+  	background-color: tan;
+}
