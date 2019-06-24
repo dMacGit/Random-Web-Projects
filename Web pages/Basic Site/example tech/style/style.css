@@ -69,7 +69,7 @@ a:hover{
 }
 
 /*Main Section*/
-section{
+#summary{
 	min-height: 400px;
 	width: auto;
 	background: url('../images/shutterstock_gaussianblur1.png') no-repeat center/cover;
@@ -100,7 +100,7 @@ section .background-wrapper
 }
 
 
-section h1 {
+#summary h1 {
 
 	font-size: 45px;
 	margin-block-start: 0em;
@@ -109,16 +109,75 @@ section h1 {
     margin-inline-end: 0px;
 }
 
-section p {
+#summary p {
 	font-size: 20px;
+}
+
+/* Separater section*/
+
+#seperater {
+	width: 100%;
+	min-height: 75px;
+	background-color: #242582;
+	text-align: center;
+	
+}
+
+#seperater h3 {
+	padding-top: 25px;
+	margin: 0px;
+	color: #fff;
+}
+
+/* Boxes */
+
+#boxes .container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#boxes{
+	margin-top:20px;
+  }
+  
+  #boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding:10px;
+  }
+  
+  #boxes .box img{
+	width:90px;
+  }
+
+footer {
+	background-color: #f64c72;
+	margin-top: 10px;
+	padding: 15px;
+}  
+footer p {
+	color: #fff;
+	text-align: center;
+}
+/* Responsive layout tweaking */
+
+@media(max-width: 768px)
+{
+	#boxes .box {
+		float:none;
+		text-align: center;
+		width: 100%;
+	}
 }
 
 @media(max-width: 512px)
 {
-	section h1 {
+	#summary h1 {
 		font-size: 35px;
 	}
-	section p {
+	#summary p {
 		font-size: 18px;
 	}
 }
@@ -133,16 +192,19 @@ section p {
 		font-size: 40px;
 	}
 
-	section h1 {
+	#summary h1 {
 		font-size: 30px;
 	}
-	section p {
+	#summary p {
 		font-size: 17px;
+	}
+	#seperater h3 {
+		padding-top: 12px;
+		width: 80%;
+		margin-left: 10%;
 	}
 
 }
-
-
 
 @media(max-width: 340px)
 {
@@ -153,14 +215,14 @@ section p {
 	header h1 {
 		font-size: 35px;
 	}
-	section h1 {
+	#summary h1 {
 		font-size: 30px;
 	}
-	section .wrapper {
+	#summary .wrapper {
 	
 		padding-top: 25px;
 	}
-	section p {
+	#summary p {
 		font-size: 15px;
 	}
 }
