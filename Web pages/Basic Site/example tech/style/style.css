@@ -1,0 +1,78 @@
+/*Global variables*/
+
+/*
+	Colors: 
+	Dark Blue #242582
+	Light Blue #2f2fa2
+	Red #f64c72
+	Red Grey #553d67
+	White #ffffff
+
+*/
+
+body{
+	font-family: arial, sans-serif, helvetica;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+/*Header*/
+
+.wrapper{
+	width: auto;
+	max-height: 300px;
+	margin-left: 0px;
+	text-align: center;
+}
+
+header{
+	background-color: #242582;
+	margin:0;
+	padding: 0;
+	color: #ffffff;
+	border-bottom: solid #f64c72 3px;
+	max-height: 200px;
+
+}
+
+header h1{
+	font-size: 55px;
+	display: inline;
+}
+
+header ul{
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+header nav li{
+	display: inline;
+	margin: 5px;
+}
+
+header nav a{
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover{
+	color: lightgrey;
+}
+
+.highlighted{
+	color: #f64c72;
+}
+
+/*Main Section*/
+section{
+	min-height: 400px;
+	background-image: url("../images/exampletech.jpg");
+	background-blend-mode: saturation;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
