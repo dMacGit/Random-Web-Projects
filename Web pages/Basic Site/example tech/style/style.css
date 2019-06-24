@@ -71,25 +71,96 @@ a:hover{
 /*Main Section*/
 section{
 	min-height: 400px;
-	background-size: auto;
-	max-width: 100%;
-	max-height: auto;
-	background-image: url("../images/shutterstock_gaussianblur1.png");
-	background-blend-mode: saturation;
-	background-repeat: no-repeat;
-	color: #ffffff;
+	width: auto;
+	background: url('../images/shutterstock_gaussianblur1.png') no-repeat center/cover;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+	vertical-align: baseline;
+
 }
 
-h3 {
+section .wrapper {
+	
+	padding-top: 50px;
+}
+
+section .background-wrapper
+{
+	width: 100%;
+	height: inherit;
+	min-height: inherit;
+}
+
+.tinted 
+{	
+	
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+section h1 {
+
+	font-size: 45px;
 	margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
-@media(max-width: 462px)
+section p {
+	font-size: 20px;
+}
+
+@media(max-width: 512px)
+{
+	section h1 {
+		font-size: 35px;
+	}
+	section p {
+		font-size: 18px;
+	}
+}
+
+@media(max-width: 465px)
 {
 	header{
 		max-height: 250px;
+
+	}
+	header h1 {
+		font-size: 40px;
+	}
+
+	section h1 {
+		font-size: 30px;
+	}
+	section p {
+		font-size: 17px;
+	}
+
+}
+
+
+
+@media(max-width: 340px)
+{
+	header{
+		max-height: 250px;
+
+	}
+	header h1 {
+		font-size: 35px;
+	}
+	section h1 {
+		font-size: 30px;
+	}
+	section .wrapper {
+	
+		padding-top: 25px;
+	}
+	section p {
+		font-size: 15px;
 	}
 }
